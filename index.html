@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Q&A Board</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <a href="#/" class="brand">💬 Q&amp;A Board</a>
+    <button id="askBtn" class="btn primary">Ask a question</button>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <dialog id="askDialog">
+    <form id="askForm" method="dialog">
+      <h2>Ask a question</h2>
+      <label>Your name <input name="author" maxlength="40" placeholder="Anonymous" /></label>
+      <label>Title <input name="title" maxlength="150" required placeholder="What's your question?" /></label>
+      <label>Details <textarea name="body" rows="6" maxlength="5000" required placeholder="Add more context…"></textarea></label>
+      <label>Tags (comma separated) <input name="tags" placeholder="javascript, css" /></label>
+      <p id="askError" class="error" hidden></p>
+      <div class="actions">
+        <button type="button" id="cancelAsk" class="btn">Cancel</button>
+        <button type="submit" class="btn primary">Post question</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>

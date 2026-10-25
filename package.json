@@ -1,0 +1,17 @@
+{
+  "name": "qa-board",
+  "version": "1.0.0",
+  "description": "A simple discussion forum / Q&A board: ask questions, post answers, vote, and accept the best answer.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
